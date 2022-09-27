@@ -77,34 +77,24 @@ public class Main {
             System.out.println("В вагоне есть стоячии места");
         }
         //Домашнее задание - 3. Задание 1//
-        int ageСhild = 1;
-        if (ageСhild >= 2 && ageСhild <= 6) {
-            System.out.println("нужно ходить в детский сад");
-        } else {
-            System.out.println("не ходит в детский сад");
-        }
-        int ageTeenager = 9;
-        if (ageTeenager >= 7 && ageTeenager <= 18) {
-            System.out.println("нужно ходить в школу");
-        } else {
-            System.out.println("не нужно ходить в школу");
-        }
-        int adultYears = 25;
-        boolean timeToWork = adultYears > 24;
-        if (adultYears >= 18 || adultYears < 24) {
-            System.out.println("его место в университете");
-        }
-        if (timeToWork) {
-            System.out.println("пора ходить на работу");
+        int yearsOld = 25;
+        if (yearsOld >= 2 && yearsOld <=6) {
+            System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить в детский сад");
+        }else if (yearsOld>6 && yearsOld <=18) {
+            System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить в школу");
+        }else if (yearsOld>18 && yearsOld <=24) {
+            System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить в университет");
+        }else if (yearsOld>24) {
+            System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить в работу");
         }
         //вторая задача//
-        int toKid = 4;
+        int toKid = 15;
         if (toKid > 14) {
-            System.out.println("он может кататься без сопровождения взрослого");
+            System.out.println("если рубенку " + toKid + " он может кататься без сопровождения взрослого");
         }else if (toKid >=5 && toKid<=14) {
-            System.out.println("он может кататься только в сопровождении взрослого");
+            System.out.println("если рубенку " + toKid + " он может кататься только в сопровождении взрослого");
         }else {
-            System.out.println("он не может кататься на аттракционе");
+            System.out.println("если рубенку " + toKid + " он не может кататься на аттракционе");
         }
         //третья задача//
         int one = 1;
