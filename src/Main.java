@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        //первая задача//
+        // Домашнее задание - 1 первая задача//
         int age = 18;
         if (age >= 18) {
             System.out.println("Поздраваляем  с совершеннолетием");
@@ -35,7 +35,7 @@ public class Main {
         if (wagonCapacity >= 102) {
             System.out.println("Вагон уже полностью забит");
         }
-        if (wagonCapacity < 102) {
+        if (wagonCapacity >= 60 && wagonCapacity < 102) {
             System.out.println("В вагоне есть стоячии места");
         }
         if (wagonCapacity < 60) {
@@ -68,9 +68,11 @@ public class Main {
             System.out.println("Должен закончить университет");
         }
         //третья задача//
-        int wagonCapacity1 = 49;
+        int wagonCapacity1 = 120;
         if (wagonCapacity1 >= 102) {
             System.out.println("вагон уже полностью забит");
+        } else if (wagonCapacity1 < 60) {
+            System.out.println("В вагоне есть сидячии места");
         } else {
             System.out.println("В вагоне есть стоячии места");
         }
@@ -96,15 +98,24 @@ public class Main {
             System.out.println("пора ходить на работу");
         }
         //вторая задача//
-        int toKid = 15;
-        boolean accompaniedByAnAdult = toKid >5 && toKid<14;
-        if (toKid>14) {
+        int toKid = 4;
+        if (toKid > 14) {
             System.out.println("он может кататься без сопровождения взрослого");
-        }
-        if (accompaniedByAnAdult) {
+        }else if (toKid >=5 && toKid<=14) {
             System.out.println("он может кататься только в сопровождении взрослого");
         }else {
             System.out.println("он не может кататься на аттракционе");
+        }
+        //третья задача//
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        if (one >= two && one>=three) {
+            System.out.println(one + " большее из трех чисел");
+        }else if (two >= one && two >=three) {
+            System.out.println(two + " большее из трех чисел");
+        }else{
+            System.out.println(three + " большее из трех чисел");
         }
     }
 }
